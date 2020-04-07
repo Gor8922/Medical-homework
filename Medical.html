@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<title>1</title>
+</head>
+<body>
+    <script>
+    let users = [
+        {
+            name:'Arman',
+            password:'1111',
+        },
+        {
+            name:'Gor',
+            password:'2222',
+        },
+        {
+            name: 'Hayk',
+            password:'6973',
+        }
+        
+    ];
+    let illness = [
+        {
+            name:  'Alzheimer',
+            symptoms: 'Memory lose, Lose track of dates and the passage of time',
+            treatments:'Clean Air , Medical drugs',
+        },
+        {
+            name: 'Convid-19',
+            symptoms: 'Shortness of breath, Cough, Fever',
+            treatments: 'Lungs ventilation machine , Stay at home ',
+        },
+        {
+            name: "H1N1" ,
+            symptoms:'Runny nose, Chills, Body aches',
+            treatments: 'Tea and lemon',
+        },
+    ];
+ 
+    let log = prompt("Write name")
+    let pass = prompt("Write password")
+    function Mutq (){
+        for (i=0; i<users.length; i++){
+            if (users[i].name === log && users[i].password === pass){
+                alert (`Welcome ${users[i].name}`)
+            }
+        }
+      }
+     Mutq();
+     let finds= prompt ('Write symptoms');
+     for (i=0; i<illness.length ; i++){
+         if (illness[i].symptoms===finds){
+             alert (`Your ill ${illness[i].name} . ${illness[i].treatments}`)
+             break;
+         } else {
+             alert ('sorry')
+         }
+     }
+ 
+
+
+
+    </script>
+</body>
+
+</html>
